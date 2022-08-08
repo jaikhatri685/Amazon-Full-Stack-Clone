@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Amazon-Full-Stack-Clone/static/css/main.021cb0ca.css",
+    "main.js": "/Amazon-Full-Stack-Clone/static/js/main.5fa32a4a.js",
+    "static/media/bannerr2.jpg": "/Amazon-Full-Stack-Clone/static/media/bannerr2.801b823bfa9b3c1f1f2f.jpg",
+    "static/media/bannerr3.jpg": "/Amazon-Full-Stack-Clone/static/media/bannerr3.8f5cd25208be5db71ed2.jpg",
+    "static/media/bannerr.jpg": "/Amazon-Full-Stack-Clone/static/media/bannerr.5e230cb43bf0ab815e73.jpg",
+    "static/media/poster_home.jpg": "/Amazon-Full-Stack-Clone/static/media/poster_home.f6aed242eff3f2c6d126.jpg",
+    "static/media/logo.png": "/Amazon-Full-Stack-Clone/static/media/logo.64a0d895e5f0098d5422.png",
+    "index.html": "/Amazon-Full-Stack-Clone/index.html",
+    "main.021cb0ca.css.map": "/Amazon-Full-Stack-Clone/static/css/main.021cb0ca.css.map",
+    "main.5fa32a4a.js.map": "/Amazon-Full-Stack-Clone/static/js/main.5fa32a4a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.021cb0ca.css",
+    "static/js/main.5fa32a4a.js"
+  ]
+}
