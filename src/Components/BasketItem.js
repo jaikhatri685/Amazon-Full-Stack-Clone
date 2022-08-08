@@ -18,18 +18,19 @@ export default function BasketItem({ item }) {
       type: "REMOVE_FROM_BASKET",
       item: id,
     });
-    
   }
 
   return (
     <>
       <Collapse in={state}>
-        <div className="basket-pdt">
-          <div className="basket-image">
-            <img src={item.image} />
+        <div className="flex flex-row justify-start items-center p-3 hover:scale-y-105 z-10  rounded-3xl mb-4"
+      style={{ boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)" }}>
+          <div className="flex justify-center items-center w-1/5">
+            <img src={item.image} className="h-48 mr-5 object-contain" />
           </div>
-          <div className="basket-pdtinfo">
-            <h3>{item.title}</h3>
+          <div className="flex flex-col  w-4/5">
+            <div>
+            <h3 className="inter text-lg font-normal">{item.title}</h3>
 
             <CurrencyFormat
               decimalScale={2}
@@ -38,9 +39,7 @@ export default function BasketItem({ item }) {
               thousandSeparator={true}
               prefix={"₹"}
               renderText={(value) => (
-                <p className="product-price">
-                  <h3>{value}</h3>
-                </p>
+                <h3 className="inter text-lg font-bold">{value}</h3>
               )}
             />
 
@@ -56,13 +55,18 @@ export default function BasketItem({ item }) {
                 console.log(val);
               }}
             />
+            </div>
+            <div className="flex flex-row justify-center w-full">
+              <div className="w-3/5">
             <Button
               variant="warning"
-              className="btn-add-to-basket"
+              
               onClick={() => RemoveFromBasket(item.id)}
             >
               Remove from Basket
             </Button>
+            </div>
+            </div>
           </div>
         </div>
       </Collapse>
