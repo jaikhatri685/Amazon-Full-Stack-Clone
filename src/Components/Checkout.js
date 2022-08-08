@@ -19,8 +19,9 @@ export default function Checkout() {
   });
 
   return (
-    <div className="checkout">
-      <div className="checkout-container-left">
+
+    <div className="lg:flex lg:flex-row lg:justify-between p-3 sm:flex sm:flex-col sm:justify-between sm:items-center lg:items-start">
+      <div className="lg:w-4/5 sm:4/5">
         <Carousel fade>
           <Carousel.Item>
             <div className="checkout-banner">
@@ -39,10 +40,11 @@ export default function Checkout() {
           </Carousel.Item>
         </Carousel>
 
-        <h1>Your Shopping Basket</h1>
-        <TransitionGroup>{display}</TransitionGroup>
+        <h1 className="font-bold inter text-3xl border-b-2 pb-2 border-gray-400 border-solid">Your Shopping Basket</h1>
+        <div className="pb-5 pt-2 pl-2"><TransitionGroup>{display}</TransitionGroup></div>
       </div>
-      <div className="checkout-container-right">
+      <div className="p-3 lg:w-1/5 sm:w-3/4 rounded-md ml-3 border-2 border-gray-400 border-solid">
+
         <Subtotal />
       </div>
     </div>
