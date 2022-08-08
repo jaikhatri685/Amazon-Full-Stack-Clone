@@ -1,5 +1,5 @@
-#DEMO URL
-https://62c603c8d315bb1db97f253a--tangerine-torrone-0009b3.netlify.app/
+# DEMO URL
+https://khatrijai.github.io/Amazon-Full-Stack-Clone/
 
 # Getting Started with Create React App
 
