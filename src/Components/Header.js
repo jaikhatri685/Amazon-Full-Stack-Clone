@@ -3,10 +3,6 @@ import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-<<<<<<< HEAD
-=======
-import "./Header.css";
->>>>>>> origin/master
 import { useStateValue } from "../StateProvider";
 import { signOut, getAuth, onAuthStateChanged } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
@@ -26,7 +22,7 @@ export default function Header() {
   }
 
   return (
-<<<<<<< HEAD
+
     <div className="flex pr-7 pl-7 pt-4  pb-4 justify-between text-white items-center text-sm font-normal inter" style={{backgroundColor:"#131921"}}>
       <Link to="/">
         <div className="flex justify-center">
@@ -65,41 +61,6 @@ export default function Header() {
              className="w-6 h-6 flex-shrink-0 mr-4 "
             />
             <h1 className=" font-normal text-sm ">{basket.length}</h1>
-=======
-    <div className="header">
-      <Link to="/">
-        <img src={logo} className="header-logo" />
-      </Link>
-
-      <div className="header-search">
-        <input type="text" className="header-searchbar" />
-        <SearchIcon className="search-icon" />
-      </div>
-
-      <div className="header-nav">
-        <Link to="/login">
-          <div className="header-subnav" onClick={handleUser}>
-            <span>Hello {userEmail}</span>
-            <h4>{userEmail !== "Guest" ? "Sign Out" : "Sign In"}</h4>
-          </div>
-        </Link>
-        <div className="header-subnav">
-          <span>Returns</span>
-          <h4>& Orders</h4>
-        </div>
-        <div className="header-subnav">
-          <span>Your</span>
-          <h4>Prime</h4>
-        </div>
-
-        <Link to="/checkout">
-          <div className="header-cart">
-            <ShoppingBasketIcon
-              fontSize="large"
-              className="nav-shopping-basket"
-            />
-            <span className="nav-shopping-text">{basket.length}</span>
->>>>>>> origin/master
           </div>
         </Link>
       </div>
